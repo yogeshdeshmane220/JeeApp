@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="1dp"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/physics"
+        android:layout_width="178dp"
+        android:layout_height="220dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="#E8CECE"
+        android:elevation="20dp"
+        app:cardCornerRadius="20dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            />
+
+        <TextView
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="167dp"
+            android:text="Physics"
+            android:textAlignment="center"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/chemistry"
+        android:layout_width="178dp"
+        android:layout_height="220dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="#E8CECE"
+        android:layout_toRightOf="@id/physics"
+        android:elevation="20dp"
+        app:cardCornerRadius="20dp">
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chemistry"
+            android:textSize="32sp"
+            android:textAlignment="center"
+            android:layout_marginTop="167dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="18dp"/>
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mathematics"
+        android:layout_width="178dp"
+        android:layout_height="220dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/physics"
+        android:elevation="20dp"
+        android:backgroundTint="#E8CECE"
+        app:cardCornerRadius="20dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="193dp"
+            android:layout_height="match_parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+             />
+
+        <TextView
+            android:layout_width="169dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="170dp"
+            android:text="Mathematic"
+            android:layout_marginLeft="1dp"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/lastyear"
+            android:layout_width="178dp"
+            android:layout_height="220dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#D8C7C7"
+            android:layout_below="@+id/chemistry"
+            android:layout_toRightOf="@id/physics"
+            android:elevation="20dp"
+            app:cardCornerRadius="20dp">
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                 />
+            <TextView
+                android:layout_width="169dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="170dp"
+                android:text="Last Year"
+                android:layout_marginLeft="1dp"
+                android:textAlignment="center"
+                android:textSize="29sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="65dp"
+      android:layout_marginLeft="300dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/logout"
+        android:src="@drawable/logout" />
+
+</RelativeLayout>
+
+
+

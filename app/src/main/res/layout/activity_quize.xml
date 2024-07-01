@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/primary"
+    android:layout_height="match_parent"
+    tools:context=".quize">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<!--        <TextView-->
+<!--            android:id="@+id/text_clock"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:text="00:00"-->
+<!--            android:textSize="25sp"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_below="@+id/text_clock"-->
+<!--            android:id="@+id/question"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:background="@drawable/que_back"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="15dp"-->
+<!--            android:text="Q1) If mass M, area A’ and velocity V are chosen as fundamental units, then the dimension of coefficient of viscosity will be:"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="25dp"-->
+<!--            android:textStyle="bold" />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Question:"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/currentQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="/10"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/text_clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="68dp"
+            android:id="@+id/line"
+            android:layout_marginHorizontal="10dp"
+            android:background="#66FFFF"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF"
+            android:layout_below="@+id/line"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="70dp"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:id="@+id/question"/>
+
+        <RadioGroup
+            android:id="@+id/options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question">
+
+            <RadioButton
+                android:id="@+id/op1"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/op_back"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:text="M V/ A¢ "
+                android:textSize="30sp" />
+
+            <RadioButton
+                android:id="@+id/op2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/op1"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/op_back"
+                android:padding="10dp"
+                android:text="M V/ A¢ "
+                android:textSize="30sp" />
+
+            <RadioButton
+                android:id="@+id/op3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/op2"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/op_back"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:text="M V/ A¢ "
+                android:textSize="30sp" />
+
+            <RadioButton
+                android:id="@+id/op4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/op3"
+                android:layout_margin="30dp"
+                android:background="@drawable/op_back"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:text="M V/ A¢ "
+                android:textSize="30sp" />
+        </RadioGroup>
+
+<!--        <TextView-->
+<!--            android:id="@+id/next"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_below="@+id/options"-->
+<!--            android:layout_marginLeft="40dp"-->
+<!--            android:layout_marginRight="40dp"-->
+<!--            android:background="@drawable/que_back"-->
+<!--            android:gravity="center"-->
+<!--            android:text="NEXT"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="30sp" />-->
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="560dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/startbuttonback"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Next"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</ScrollView>
